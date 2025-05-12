@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load model (make sure the file is at the same level as this script)
-model = joblib.load("lung_cancer_model.pkl")
+model = joblib.load("lung_cancer_logistic_model.pkl")
 
 @app.route("/")
 def home():
